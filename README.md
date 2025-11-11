@@ -80,19 +80,6 @@ Aquí ves:
 - Cola `weather_queue` (durable)
 - Mensajes en cola, consumidores activos, tasas de throughput
 
-### PostgreSQL (conexión remota)
-
-```bash
-# Conéctate desde tu máquina
-psql -h localhost -U weather -d weatherdb
-# Contraseña: weatherpass
-
-# Luego en psql, consulta:
-SELECT COUNT(*) FROM weather_logs;
-SELECT * FROM weather_logs LIMIT 10;
-SELECT station_id, COUNT(*) as total FROM weather_logs GROUP BY station_id;
-```
-
 ## 📊 Estructura de datos
 
 ### Tabla `weather_logs`
